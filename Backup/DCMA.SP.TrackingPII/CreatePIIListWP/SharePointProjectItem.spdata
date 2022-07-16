@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="CreatePIIListWPUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="CreatePIIListWP\" Type="ElementManifest" />
+    <ProjectItemFile Source="CreatePIIListWP.webpart" Target="CreatePIIListWP\" Type="ElementFile" />
+    <ProjectItemFile Source="CreatePIIListWPUserControl.ascx" Target="CONTROLTEMPLATES\DCMA.SP.TrackingPII\CreatePIIListWP\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="DCMA.SP.TrackingPII.CreatePIIListWP" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

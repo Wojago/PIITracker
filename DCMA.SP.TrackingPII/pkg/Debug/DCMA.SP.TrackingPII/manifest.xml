@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="9d169d61-1a5f-4b67-9721-c891b306457f" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="DCMA.SP.TrackingPII.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="DCMA.SP.TrackingPII, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8593ae0ac35dd13e" Namespace="DCMA.SP.TrackingPII.CreatePIIListWP" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\DCMA.SP.TrackingPII\CreatePIIListWP\CreatePIIListWPUserControl.ascx" />
+    <TemplateFile Location="Layouts\DCMA.SP.TrackingPII\RemovePerms.aspx" />
+    <TemplateFile Location="Layouts\DCMA.SP.TrackingPII\RibbonPIIScript.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="DCMA.SP.TrackingPII_PIIFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

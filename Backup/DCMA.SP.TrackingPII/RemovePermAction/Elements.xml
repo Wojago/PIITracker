@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- This example illustrates how to place a new button on the Ribbon and 
+
+                               call a function in a separate JavaScript file. -->
+
+        <CustomAction Id="PII_ListandItems_Status"
+        RegistrationType="List"
+        RegistrationId="100"
+        Location="CommandUI.Ribbon"
+        Sequence="10001">
+        <CommandUIExtension>
+        <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.ListItem.Groups._children">
+            <Group
+            Id="Ribbon.ListItem.PIIRibbon"
+            Sequence="20"
+            Description="PII Ribbon Group"
+            Title="PII Permissions"
+            Template="Ribbon.Templates.Flexible2">
+            <Controls Id="Ribbon.ListItem.PIIRibbon.Controls">
+            <Button Id="Ribbon.ListItem.Actions.AppHost-RCAButton"
+                        Alt="Update Permissions on the selected PII item by removing existing permissions and adding newly created PII Members Group."
+                        Sequence="101"
+                        Command="DCMA.Ribbon.PermCommand"
+                        LabelText="Update PII Permissions"
+                        TemplateAlias="o1"
+                        Image32by32="/_layouts/$Resources:core,Language;/images/formatmap32x32.png" Image32by32Top="-32" Image32by32Left="-384"/>
+            <Button Id="Ribbon.ListItem.Actions.AppHost-RCAButton2"
+                      Alt="View Permissions on the selected PII item"
+                      Sequence="100"
+                      Command="ViewPermCommand"
+                      LabelText="View PII Permissions"
+                      TemplateAlias="o1"
+                      Image32by32="/_layouts/$Resources:core,Language;/images/formatmap32x32.png" Image32by32Top="-64" Image32by32Left="-384"/>
+           </Controls>
+             </Group>
+                  </CommandUIDefinition>
+                  <CommandUIDefinition Location="Ribbon.ListItem.Scaling._children">
+                    <MaxSize Id="Ribbon.ListItem.PIIRibbon.MaxSize" Sequence="20" GroupId="Ribbon.ListItem.PIIRibbon" Size="LargeLarge" />
+                  </CommandUIDefinition>
+                  <CommandUIDefinition Location="Ribbon.ListItem.Scaling._children">
+                    <Scale Id="Ribbon.ListItem.PIIRibbon.MediumMedium" Sequence="30" GroupId="Ribbon.ListItem.PIIRibbon" Size="MediumMedium" />
+                  </CommandUIDefinition>
+                  <CommandUIDefinition Location="Ribbon.ListItem.Scaling._children">
+                    <Scale Id="Ribbon.ListItem.PIIRibbon.Popup" Sequence="50" GroupId="Ribbon.ListItem.PIIRibbon" Size="Popup" />
+                  </CommandUIDefinition>
+                </CommandUIDefinitions>
+                <CommandUIHandlers>
+               <CommandUIHandler Command="DCMA.Ribbon.PermCommand"
+                  CommandAction="javascript:getListProperties();"
+                  EnabledScript="javascript:enable();" />
+                    <CommandUIHandler Command="ViewPermCommand"
+                      CommandAction="javascript:viewPermissions();"
+                       EnabledScript="javascript:enable();"/>
+</CommandUIHandlers>
+</CommandUIExtension>
+</CustomAction>
+<!-- This CustomAction tab registers the RibbonScript.js file so it can be called
+
+                        from any CommandUIHandler element -->
+
+<CustomAction Id="DCMA.Ribbon.PermScript"
+Location="ScriptLink"
+ScriptSrc="/_layouts/DCMA.SP.TrackingPII/RibbonPIIScript.js"  />
+</Elements>
+
+ 
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DCMA.SP.TrackingPII.CreatePIIListWP.CreatePIIListWP, DCMA.SP.TrackingPII, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8593ae0ac35dd13e" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">CreatePIIListWP</property>
+        <property name="Description" type="string">Create PII web part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

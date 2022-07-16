@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9d169d61-1a5f-4b67-9721-c891b306457f" solutionId="9d169d61-1a5f-4b67-9721-c891b306457f" resetWebServer="false" name="DCMA.SP.TrackingPII" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5b353fd3-40f7-4864-b6a5-308d62f01865" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="03f8b6f7-8ab7-4a71-827d-5d13e28810f0" />
+  </projectItems>
+</package>

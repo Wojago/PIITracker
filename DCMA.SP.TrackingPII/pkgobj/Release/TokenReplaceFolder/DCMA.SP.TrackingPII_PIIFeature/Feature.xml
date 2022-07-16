@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="DCMA.SP.TrackingPII " ActivateOnDefault="FALSE" Description="Activating this feature creates web part to scan and save PII content in PII Tracking List, Creates PII Scope, and adds new  permission button links to the ribbon." Id="4b9012ac-896c-4709-b58d-92e74359af77" ReceiverAssembly="DCMA.SP.TrackingPII, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8593ae0ac35dd13e" ReceiverClass="DCMA.SP.TrackingPII.Features.PIIFeature.PIIScopeFeatureEventReceiver" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="CreatePIIListWP\Elements.xml" />
+    <ElementFile Location="CreatePIIListWP\CreatePIIListWP.webpart" />
+    <ElementManifest Location="RemovePermAction\Elements.xml" />
+    <ElementManifest Location="preventDuplicateField\Elements.xml" />
+  </ElementManifests>
+</Feature>

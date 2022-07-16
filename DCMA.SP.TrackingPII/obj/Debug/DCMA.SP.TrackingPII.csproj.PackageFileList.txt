@@ -1,0 +1,1 @@
+bin\Debug\DCMA.SP.TrackingPII.wsp

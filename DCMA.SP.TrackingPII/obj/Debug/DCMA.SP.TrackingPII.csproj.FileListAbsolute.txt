@@ -1,0 +1,5 @@
+c:\users\dc25748\documents\visual studio 2010\Projects\DCMA.SP.TrackingPII\DCMA.SP.TrackingPII\bin\Debug\DCMA.SP.TrackingPII.dll
+c:\users\dc25748\documents\visual studio 2010\Projects\DCMA.SP.TrackingPII\DCMA.SP.TrackingPII\bin\Debug\DCMA.SP.TrackingPII.pdb
+c:\users\dc25748\documents\visual studio 2010\Projects\DCMA.SP.TrackingPII\DCMA.SP.TrackingPII\obj\Debug\DCMA.SP.TrackingPII.csprojResolveAssemblyReference.cache
+c:\users\dc25748\documents\visual studio 2010\Projects\DCMA.SP.TrackingPII\DCMA.SP.TrackingPII\obj\Debug\DCMA.SP.TrackingPII.dll
+c:\users\dc25748\documents\visual studio 2010\Projects\DCMA.SP.TrackingPII\DCMA.SP.TrackingPII\obj\Debug\DCMA.SP.TrackingPII.pdb
